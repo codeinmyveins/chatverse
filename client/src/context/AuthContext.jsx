@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
+import { API_BASE_URL } from '../config/api'
 
 const AuthContext = createContext()
 
@@ -16,6 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
 
   // Configure axios defaults
+  axios.defaults.baseURL = API_BASE_URL
   axios.defaults.withCredentials = true
 
   useEffect(() => {
