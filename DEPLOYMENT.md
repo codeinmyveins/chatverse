@@ -59,7 +59,7 @@ git push origin main
    - **Root Directory:** `client`
    - **Environment:** `Node`
    - **Build Command:** `npm install && npm run build`
-   - **Start Command:** `npx serve -s dist -l 10000`
+   - **Start Command:** `npm start`
 4. **Environment Variables:**
    ```
    NODE_ENV=production
